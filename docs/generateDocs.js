@@ -1,7 +1,7 @@
-var fs = require('fs');
-var parse = require('../node_modules/json-schema-to-markdown');
+const fs = require('fs');
+const parse = require('../node_modules/json-schema-to-markdown');
 
-var schema = JSON.parse(fs.readFileSync("../MicrosoftTeams.schema.json", 'utf8'));
+var schema = JSON.parse(fs.readFileSync('./MicrosoftTeams.schema.json', 'utf8'));
 
 var markdown = parse(schema);
 
